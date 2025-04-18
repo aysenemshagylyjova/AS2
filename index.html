@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AS2</title>
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/icons/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/splide.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/splide.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1500,
+            once: true,
+        });
+    </script>
+
+    <script>
+        var splide = new Splide(".splide", {
+            type: "loop",
+            autoplay: true,
+            interval: 2000,
+            pauseOnHover: false,
+            pauseOnFocus: false,
+            arrows: false,
+            pagination: false,
+        });
+        splide.mount();
+    </script>
+</body>
+
+</html>
